@@ -1,0 +1,35 @@
+{
+    "name": "ve-interactive/hobknob-client-php",
+    "description": "A php client to retrieve feature toggles stored in Etcd.",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Nic Puddu",
+            "email": "nicola.puddu@veinteractive.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "linkorb/etcd-php": "~1.2"
+    },
+    "require-dev": {
+        "ve-interactive/php-mess-detector": "*",
+        "ve-interactive/php-sniffer-rules": "*",
+        "phpunit/phpunit": "^5.3"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:ve-interactive/PhpSnifferRules.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:ve-interactive/VeMessDetector.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VeInteractive\\HobKnob\\": "src/"
+        }
+    }
+}
